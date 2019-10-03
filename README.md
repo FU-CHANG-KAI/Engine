@@ -3,7 +3,7 @@ Engine is a recommendation system which get movies list from *China Airlines* an
 
 ## Installation
 ```bash
-bashuests and BeautifulSoup
+requests and BeautifulSoup
 ```
 
 ## Usage
