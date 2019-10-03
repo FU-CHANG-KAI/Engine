@@ -2,15 +2,16 @@
 Engine is a recommendation system which get movies list from *China Airlines* and parse the movies' information. It will map ratings on IMDB and recommend the top five movies to the users
 
 ## Installation
-
-Use req```
+```bash
 bashuests and BeautifulSoup
 ```
 
 ## Usage
+```bash
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+```
 
 ## Limitation
 Reveal is still under construction. More features will be presented in the near feature.
