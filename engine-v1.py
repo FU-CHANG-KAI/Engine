@@ -31,6 +31,20 @@ def get_movie_data(movie_title):
     }
     return movie_data
 
+movies_list_url = ["http://www.fantasy-sky.com/ContentList.aspx?section=002&category=0020{}".format(i) for i in range(1, 5)]
+print(movies_list_url)
+ca_cookies = {"COOKIE_LANGUAGE":'en'}
+
+ca_movie_titles = []
+for i in movies_list_url:
+    print("Crawling Movie Title {} ".format(i))
+    r = requests.get(i, cookies = ca_cookies)
+    soup = BeautifulSoup(r.text)
+    movie_titles = [j.text for j in soup.select(".movies-name")]
+    print(movie_titles)
+    ca_movie_titles += movie_titles
+
+
 movie_ratings = []
 movie_titles_with_error = []
 for movie_title in ca_movie_titles:
