@@ -1,5 +1,5 @@
 # Engine
-Engine is a recommendation system which get movies list from *China Airlines* and parse the movies' information. It will map ratings on IMDB and recommend the top five movies to the users
+Engine scrapts movies list from *China Airlines* and parse the movies' information. It will map ratings on IMDB and recommend the top five movies to the users
 
 ## Installation
 ```bash
